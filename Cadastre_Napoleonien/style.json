@@ -1,0 +1,75 @@
+{
+    "version": 8,
+    "name": "Cadastre napoléonien noir et blanc",
+    "metadata": {
+        "mapbox:autocomposite": true,
+        "mapbox:type": "template",
+        "mapbox:sdk-support": {
+            "android": "10.0.0",
+            "ios": "10.0.0",
+            "js": "2.6.0"
+        },
+        "mapbox:groups": {},
+        "mapbox:uiParadigm": "layers"
+    },
+    "center": [4.864962344209204, 45.76420465158574],
+    "zoom": 12.009840269954191,
+    "bearing": 0,
+    "pitch": 0,
+    "sources": {
+        "mapbox://mapbox.mapbox-terrain-dem-v1": {
+            "url": "mapbox://mapbox.mapbox-terrain-dem-v1",
+            "type": "raster-dem",
+            "tileSize": 256
+        },
+        "composite": {
+            "url": "mapbox://nolwennlegoff.0lmuwvuv,mapbox.mapbox-terrain-v2,nolwennlegoff.bp7o9rqq",
+            "type": "vector"
+        }
+    },
+    "sprite": "mapbox://sprites/nolwennlegoff/cl3r44rsb001g15plhwlcmj44/ck2u8j60r58fu0sgyxrigm3cu",
+    "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
+    "layers": [
+        {
+            "id": "mapbox-mapbox-terrain-dem-v1",
+            "type": "hillshade",
+            "source": "mapbox://mapbox.mapbox-terrain-dem-v1",
+            "layout": {},
+            "paint": {"hillshade-exaggeration": 0.29}
+        },
+        {
+            "id": "hillshade",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "hillshade",
+            "layout": {},
+            "paint": {
+                "fill-color": "hsla(55, 0%, 0%, 0.05)",
+                "fill-outline-color": "hsla(0, 0%, 0%, 0)"
+            }
+        },
+        {
+            "id": " Communes",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "Lyon_Villeurbanne_Cad_Napo_Co-3ua0uf",
+            "layout": {},
+            "paint": {}
+        },
+        {
+            "id": "Voirie",
+            "type": "line",
+            "source": "composite",
+            "source-layer": "Lyon_Villeurbanne_Cad_Napo_Il-aaha5k",
+            "layout": {},
+            "paint": {"line-width": 0.3}
+        }
+    ],
+    "created": "2022-05-29T09:42:00.897Z",
+    "modified": "2022-05-29T09:54:15.212Z",
+    "id": "cl3r44rsb001g15plhwlcmj44",
+    "owner": "nolwennlegoff",
+    "visibility": "private",
+    "protected": false,
+    "draft": false
+}
