@@ -1,0 +1,113 @@
+{
+  "version": 8,
+  "name": "Essai",
+  "metadata": {"maputnik:renderer": "mbgljs"},
+  "center": [4.859451905072774, 45.76004613536932],
+  "zoom": 12.235165157454505,
+  "bearing": 0,
+  "pitch": 0,
+  "sources": {
+    "GitHubCadNapoIlots": {
+      "type": "geojson",
+      "data": "https://raw.githubusercontent.com/NolwennLeGoff/Geodata/main/Cadastre_Napoleonien/Lyon_Villeurbanne_Cad_Napo_Ilots_WGS84.geojson"
+    },
+    "GitHubCadNapoBats": {
+      "type": "geojson",
+      "data": "https://raw.githubusercontent.com/NolwennLeGoff/Geodata/main/Cadastre_Napoleonien/Lyon_Villeurbanne_Cad_Napo_Batiments_WGS84.geojson"
+    },
+    "GitHubCadNapoCommunes": {
+      "type": "geojson",
+      "data": "https://raw.githubusercontent.com/NolwennLeGoff/Geodata/main/Cadastre_Napoleonien/Lyon_Villeurbanne_Cad_Napo_Communes_WGS84.geojson"
+    },
+    "GitHubCadNapoFeuilles": {
+      "type": "geojson",
+      "data": "https://raw.githubusercontent.com/NolwennLeGoff/Geodata/main/Cadastre_Napoleonien/Lyon_Villeurbanne_Cad_Napo_Feuilles_WGS84.geojson"
+    },
+    "GitHubCadNapoParcelles": {
+      "type": "geojson",
+      "data": "https://raw.githubusercontent.com/NolwennLeGoff/Geodata/main/Cadastre_Napoleonien/Lyon_Villeurbanne_Cad_Napo_Parcelles_WGS84.geojson"
+    },
+    "GitHubCadNapoToponymes": {
+      "type": "geojson",
+      "data": "https://raw.githubusercontent.com/NolwennLeGoff/Geodata/main/Cadastre_Napoleonien/Lyon_Villeurbanne_Cad_Napo_Toponymes_WGS84.geojson"
+    }
+  },
+  "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key=ylny3C7wEGJTEFTuRsoJ",
+  "layers": [
+    {
+      "id": "Batiments",
+      "type": "fill",
+      "source": "GitHubCadNapoBats",
+      "paint": {"fill-color": "rgba(0, 0, 0, 1)"}
+    },
+    {
+      "id": "Parcelles_Polygones",
+      "type": "fill",
+      "source": "GitHubCadNapoParcelles",
+      "layout": {"visibility": "none"},
+      "paint": {
+        "fill-opacity": 0.1,
+        "fill-color": "rgba(255, 255, 255, 1)",
+        "fill-outline-color": "rgba(0, 0, 0, 1)"
+      }
+    },
+    {
+      "id": "Parcelles_Polylignes",
+      "type": "line",
+      "source": "GitHubCadNapoParcelles",
+      "paint": {"line-width": 0.1}
+    },
+    {
+      "id": "Ilots_Polygones",
+      "type": "fill",
+      "source": "GitHubCadNapoIlots",
+      "paint": {
+        "fill-color": "rgba(255, 255, 255, 1)",
+        "fill-opacity": 0.1,
+        "fill-outline-color": "rgba(0, 0, 0, 1)"
+      }
+    },
+    {
+      "id": "Ilots_Polylignes",
+      "type": "line",
+      "source": "GitHubCadNapoIlots",
+      "paint": {"line-width": 0.5}
+    },
+    {
+      "id": "Communes_Polylignes",
+      "type": "line",
+      "source": "GitHubCadNapoCommunes",
+      "layout": {"visibility": "none"}
+    },
+    {
+      "id": "Communes_Polygones",
+      "type": "fill",
+      "source": "GitHubCadNapoCommunes",
+      "layout": {"visibility": "none"}
+    },
+    {
+      "id": "Toponymie",
+      "type": "symbol",
+      "source": "GitHubCadNapoToponymes",
+      "layout": {
+        "text-field": "",
+        "symbol-placement": "point",
+        "text-writing-mode": [],
+        "visibility": "none"
+      }
+    },
+    {
+      "id": "Feuilles_Polygones",
+      "type": "fill",
+      "source": "GitHubCadNapoFeuilles",
+      "layout": {"visibility": "none"}
+    },
+    {
+      "id": "Feuilles_Polylignes",
+      "type": "line",
+      "source": "GitHubCadNapoFeuilles",
+      "layout": {"visibility": "none"}
+    }
+  ],
+  "id": "f28497bf-5b3c-44bc-834b-15600daae516"
+}
