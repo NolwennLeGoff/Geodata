@@ -1,0 +1,14 @@
+{
+  "name": "Tiles",
+  "version": "1.1.0",
+  "description": "",
+  "attribution": "Rendered with <a href=\"https://www.maptiler.com/desktop/\">MapTiler Desktop</a>",
+  "type": "baselayer",
+  "format": "pbf",
+  "minzoom": "9",
+  "maxzoom": "16",
+  "scale": "1.000000",
+  "bounds": [4.77201520, 45.71365770, 4.92124110, 45.80821800],
+  "profile": "mercator",
+  "vector_layers": [{"id":"LyonVilleurbanneCadNapoIlots","description":"","minzoom":9, "maxzoom":16,"fields":{"ILO_IDENT":"Number","DEP_NOM":"String","COM_NOM":"String","COM_NOM2":"String","PAR_SEC":"String","DOC1_FEUIL":"String","QUARTIER":"String","ILO_DOC":"String","ILO_AIRE_M":"Number","ILO_PERI_M":"Number","DOC_TRILIB":"String","DOC1_ARCH":"String","DOC1_ARCHL":"String","DOC1_COT1":"String","DOC1_COT2":"String","DOC1_COT3":"String","DOC1_COT4":"String","DOC1_AUT":"String","DOC1_DATE":"String","DOC2_ARCH":"String","DOC2_ARCHL":"String","DOC2_COT1":"String","DOC2_COT2":"String","DOC2_AUT":"String","DOC2_DATE":"String","DOC2_LIEN":"String","COUCHE_AUT":"String","COUCHE_SRC":"String","ENCODAGE":"String","ILO_AIRE_H":"Number","ILO_NBPAR":"Number","ILO_NBPARH":"Number"}}]
+}
